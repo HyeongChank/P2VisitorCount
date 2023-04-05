@@ -1,0 +1,25 @@
+package counterDao;
+import java.io.FileOutputStream;
+
+import org.apache.poi.xssf.usermodel.*;
+
+public class ExcelDao {
+	// 1. Create a new workbook
+    XSSFWorkbook workbook = new XSSFWorkbook();
+    
+    // 2. Create a new sheet
+    XSSFSheet sheet = workbook.createSheet("My Sheet");
+    
+    // 3. Create a new row
+    XSSFRow row = sheet.createRow(0);
+    
+    // 4. Create a new cell and add value to it
+    XSSFCell cell = row.createCell(0);
+    cell.setCellValue("Hello, world!");
+    
+    // 5. Save the workbook
+    String filename = "my_excel_file.xlsx";
+    FileOutputStream outputStream = new FileOutputStream(filename);
+    workbook.write(outputStream);
+    outputStream.close();
+}

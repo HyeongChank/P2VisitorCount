@@ -1,0 +1,14 @@
+package counterDao;
+import java.io.FileOutputStream;
+
+import org.apache.poi.xssf.usermodel.*;
+
+public class ExcelDao {
+	// 1. Create a new workbook
+    XSSFWorkbook workbook = new XSSFWorkbook();
+    
+    // 2. Create a new sheet
+    XSSFSheet sheet = workbook.createSheet("My Sheet");
+    
+
+}

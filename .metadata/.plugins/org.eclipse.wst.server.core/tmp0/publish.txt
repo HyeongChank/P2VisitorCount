@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Wed Apr 05 12:58:39 KST 2023
+org.eclipse.jst.j2ee.server\:cos=WEB-INF/lib/cos.jar
+org.eclipse.jst.j2ee.server\:jstl-1.2=WEB-INF/lib/jstl-1.2.jar
+org.eclipse.jst.j2ee.server\:mysql-connector-j-8.0.32=WEB-INF/lib/mysql-connector-j-8.0.32.jar
